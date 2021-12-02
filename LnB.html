@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://www.pythonanywhere.com/user/saurdrokr/files/home/saurdrokr/mysite/templates/LnB.html -->
+<html><!--From https://codepen.io/frytyler/pen/EGdtg--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <title>Deployment of ML Models</title>
+  <link href="./LnB1_files/css" rel="stylesheet" type="text/css">
+<link href="./LnB1_files/css(1)" rel="stylesheet" type="text/css">
+<link href="./LnB1_files/css(2)" rel="stylesheet" type="text/css">
+<link href="./LnB1_files/css(3)" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./LnB1_files/style.css">
+
+</head>
+
+<body>
+
+ <div class="login">
+   <h1>Learn and Build</h1>
+   <h2>Machine Learning Model</h2>
+	<h3>Expected Salary</h3>
+
+     <!-- Main Input For Receiving Query to our ML Code -->
+    <form action="https://www.pythonanywhere.com/user/saurdrokr/files/home/saurdrokr/mysite/templates/%7B%7B&#39;/prediction&#39;%7D%7D" method="POST">
+    	<input type="text" name="Years of Experience" placeholder="Years of Experience" required="required">
+        <input type="text" name="Projects Build" placeholder="Projects Build" required="required">
+		<input type="text" name="Interview_Grades" placeholder="Interview_Grades" required="required">
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+
+
+</body></html>
